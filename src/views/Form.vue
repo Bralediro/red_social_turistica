@@ -1,6 +1,6 @@
 <template>
 
-  <div class="container p-2" style="background-color:#008978" >
+  <div class="container p-2">
       <form>
         <h1>Registro Usuarios</h1>
         <div class="form-group row mt-2" >

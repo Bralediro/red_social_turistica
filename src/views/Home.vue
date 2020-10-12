@@ -76,7 +76,7 @@
           </div>
         </div>
         <div class="col-md-4">
-          <img src="../assets/putumayo.jpg" class="rounded-circle" alt="Eniun">
+          <img src="../assets/putumayo.jpg"  alt="Eniun">
 
         </div>
       </div>
