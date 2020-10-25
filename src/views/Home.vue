@@ -44,7 +44,7 @@
 
 <br>
 
-<div class="container" style="border: 1px solid rgb(4, 174, 253)" >      
+<div class="card-body" style="border: 1px solid rgb(4, 174, 253)" >      
   <form>
       <h1>Iniciar Sesión</h1>
   <div class="row">
