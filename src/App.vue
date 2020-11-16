@@ -1,7 +1,7 @@
 <template>
   <header class="header">
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Puturis</a>
+        <a class="navbar-brand" href="#"><img src="@/assets/icon.jpg" width="60" height="60" /></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -19,7 +19,7 @@
               Mas...
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Lugares</a>
+              <a class="dropdown-item" href="http://localhost:8080/lugares">Lugares</a>
               <a class="dropdown-item" href="#">Registrarse...</a>
               <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="#">Visitas</a>
@@ -35,6 +35,7 @@
     </nav>
   </header>
   <router-view/>
+  
 </template>
 
 <style>
@@ -45,10 +46,13 @@
   text-align: center;
   color: #2c3e50;
 }
-
-.header .navbar {
-  background-color: transparent !important;
+nav.navbar {
+    background-color: #CC1414;
 }
+nav navbar ul.nav li {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
 #nav {
   padding: 30px;
   
@@ -62,4 +66,6 @@
 #nav a.router-link-exact-active {
   color: #42b983;
 }
+
+
 </style>

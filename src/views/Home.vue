@@ -52,7 +52,7 @@
           <div class="form-group row">
           <label for="email" class="col-sm-2 col-form-label">Email</label>
           <div class="col-sm-6">
-            <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+            <input type="email" class="form-control" id="email" placeholder="Email">
           </div>
         </div>
           <div class="row">
@@ -114,11 +114,22 @@
     </div>
   </div>
 </div>
-
+<div>
+  <button type="button" @click="salir">
+    Salir
+  </button>
+</div>
 </template>
 
 <script>
-  
+export default {
+  methods:{
+    salir(){
+      localStorage.removeItem("token")
+      this.$router.push('/login')
+    }
+  },
+}
 </script>
 
 <style>

@@ -32,7 +32,8 @@ export default {
       fetch("http://localhost:8000/api-auth/", {
         method: 'POST',
         headers: {
-          'Content-Type': 'application/json'
+          'Content-Type': 'application/json',
+          //"Authorization": "USU" + localStorage.getItem("token")
         },
         body: JSON.stringify({
           username: this.email,
@@ -45,7 +46,7 @@ export default {
         })
         .then((data) => {
           localStorage.setItem('token', data.token)
-          this.$router.push('/')
+          this.$router.push('/Form')
         }).catch((err) => {
           this.error = true
         });
